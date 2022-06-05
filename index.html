@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/normalize.css">
+        <script src="https://kit.fontawesome.com/864947ab41.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Booki</title>
@@ -12,9 +13,14 @@
 
   <body>
 <div id="bloc_page">
+
+<!--Header-->
+
 <header>
 
-  <img src="images/logo/booki.png" alt="logo" id="logo" size="10px">
+  <img src="images/logo/booki.png" alt="logo" id="logo">
+
+<!--Menu navigation-->
 
 <nav>
   <ul>
@@ -27,6 +33,27 @@
 <main>
 
 <!-- Section contenant le formulaire de recherche -->
+<section id="search">
+<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+<p>En plein centre ville ou en pleine nature</p>
+
+<form id="searchform">
+
+<div id="iconelocation">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+
+<input type="search" name="search_location" id="search_field" value="" placeholder="Marseille, France"/>
+<input type="submit" name="search_location" value="Rechercher" id="locationbutton">
+<span>
+  <i id="magnifying"><input type="submit" class="fa-solid fa-magnifying-glass" name="search_location"></i>
+ </span>
+
+</form>
+
+</section>
+
+<!--Section filtres -->
 <section>
 
 </section>
