@@ -73,7 +73,7 @@ nav a:hover {
   padding-top: 48px;
   padding-right: 30px;
   padding-left: 30px;
-  transition: 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 /*Zone de recherche*/
@@ -152,6 +152,7 @@ input::placeholder{
   color: black;
   border-color: #F2F2F2;
   cursor: pointer;
+  transition: all 0.4s ease-out;
 }
 
 #magnifying{
@@ -188,6 +189,7 @@ button:hover{
   background-color: #DEEBFF;
   border-color: #DEEBFF;
   cursor: pointer;
+  transition: all 0.6s ease-out;
 }
 
 .fa-child-reaching, .fa-dog, .fa-money-bill-wave, .fa-heart {
@@ -206,6 +208,7 @@ button:hover{
   color: #DEEBFF;
   border-color: #0065FC;
   cursor: pointer;
+  transition: all 0.6s ease-out;
 }
 
 #ecofamilial{
@@ -330,8 +333,8 @@ flex-wrap: wrap;
 }
 
 .cardhebergement:hover{
-  margin-left: 0.5%;
-  margin-top: 0.5%;
+box-shadow: 0px 0px 20px 1px #C9C9C9;
+border: solid 1px #D9D9D9;
 }
 
 .imghebergements{
@@ -392,7 +395,8 @@ color: #F2F2F2;
 }
 
 .cardpopulaires:hover{
-  margin-left: 0.5%;
+  box-shadow: 0px 0px 20px 1px #C9C9C9;
+  border: solid 1px #D9D9D9;
 }
 
 .imgpopulaires{
@@ -428,8 +432,6 @@ color: #F2F2F2;
 margin-top: 20%;
 }
 
-
-
 /*Version tablette*/
 
 @media screen and (min-width:768px) and (max-width:991px){
@@ -457,7 +459,6 @@ width: 100%;
 }
 
 nav ul{
-
 font-size: 18px;
 padding: 0;
 margin: 0;
@@ -465,7 +466,6 @@ margin: 0;
 
 
 nav li{
-
 margin-right: 0px;
 margin-left: 0px;
 width: 100%;
@@ -474,7 +474,6 @@ width: 100%;
 nav a{
 padding-right: 35%;
 padding-left: 35%;
-
 }
 
 a.activites{
@@ -535,8 +534,86 @@ button{
   margin-left: 5%;
 }
 
+/*Sections Hébergements et populaires tablette*/
+
+.hebergetpop{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
+/*Section Hébergements tablette*/
+
+#hebergementsmarseille {
+  width: 100%;
+  background-color: white;
+}
+
+
+/*Section Les plus populaires tablette*/
+
+#lespopulaires{
+  width: 100%;
+  border-radius: 0px;
+  padding-bottom: 3%;
+}
+
+#lespopulaires h1{
+  position: absolute;
+  margin-left: 4%;
+}
+
+#cardspopulaires{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+#blackstar .fa-star{
+  position: absolute;
+  margin-left: 35%;
+}
+
+/*Cards Les plus populaires tablette*/
+
+.cardpopulaires{
+  width: 33%;
+  margin: 1%;
+  margin-bottom: 3%;
+  margin-top: 5%;
+}
+
+.txtpopulaires{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  line-height: 0.8;
+}
+
+.cardpopulaires h2{
+  margin-top: 10%;
+  margin-left: 2%;
+  margin-bottom: 0px;
+}
+
+.cardpopulaires p{
+  margin-left: 2%;
+  margin-top: 0px;
+  font-size: 15px;
+}
+
+.cardpopulaires .stars{
+display: flex;
+display: column;
+margin-top: 10px;
+}
+
+}
 
 /*Version mobile*/
 
@@ -708,5 +785,51 @@ margin-bottom: 15px;
   width: 15px;
 }
 
+/*Sections Hébergements et populaires mobile*/
+
+.hebergetpop{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#lespopulaires{
+  width: 100%;
+  border-radius: 0px;
+  padding-bottom: 3%;
+}
+
+#hebergementsmarseille {
+  width: 100%;
+  background-color: white;
+}
+
+/*Section les hébergements mobile*/
+
+.cardhebergement{
+  width: 93%;
+  margin-bottom: 5%;
+  line-height: 0.8;
+}
+
+.cardhebergement h2{
+  font-size: 19px;
+}
+
+.imghebergements{
+  width: 325px;
+}
+
+/*Sections Les populaires mobile */
+
+.cardpopulaires h2{
+  font-size: 19px;
+}
+
+.cardpopulaires .stars{
+  margin-top: 15%;
+}
 
 }
