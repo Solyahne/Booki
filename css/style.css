@@ -258,6 +258,11 @@ flex-wrap: wrap;
   font-size: 22px;
 }
 
+.hebergetpop a{
+  color: black;
+  text-decoration: none;
+}
+
 /*Section Hébergements*/
 
 #hebergementsmarseille {
@@ -324,12 +329,7 @@ flex-wrap: wrap;
   border-radius: 15px;
   line-height: 1;
   background-color: white;
-  margin-bottom: 3%;
-}
-
-.cardhebergement a{
-  text-decoration: none;
-  color: black;
+  margin-bottom: 12%;
 }
 
 .cardhebergement:hover{
@@ -432,6 +432,87 @@ color: #F2F2F2;
 margin-top: 20%;
 }
 
+/*Activités à Marseille*/
+
+#activites{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+
+#activites h1{
+  position: absolute;
+}
+
+#activites h2{
+margin-left: 5%;
+}
+
+#activites a{
+  color: black;
+  text-decoration: none;
+}
+
+.activitycolumn{
+  flex-direction: column;
+}
+
+/*Cards activités grandes*/
+
+.bigcardactivites{
+border-radius: 15px;
+box-shadow: 0px 0px 10px 1px #E2E2E2;
+width: 300px;
+padding-bottom: 0.5%;
+margin-top: 2%;
+}
+
+.imgactivitesbig{
+  object-fit: cover;
+  height: 385px;
+  width: 300px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/*Cards activités moyennes*/
+
+.mediumcardactivites{
+border-radius: 15px;
+box-shadow: 0px 0px 10px 1px #E2E2E2;
+width: 300px;
+padding-bottom: 0.5%;
+margin-top: 2%;
+}
+
+.imgactivitesmedium{
+  object-fit: cover;
+  height: 180px;
+  width: 300px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/*Cards activités petites*/
+
+.smallcardactivites{
+border-radius: 15px;
+box-shadow: 0px 0px 10px 1px #E2E2E2;
+width: 300px;
+padding-bottom: 0.5%;
+margin-top: 2%;
+}
+
+.imgactivitessmall{
+  object-fit: cover;
+  height: 110px;
+  width: 300px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
 /*Version tablette*/
 
 @media screen and (min-width:768px) and (max-width:991px){
@@ -504,7 +585,7 @@ padding-left: 35%;
 
 /*Zone filtre tablette*/
 
-h2{
+#filtre h2{
   font-size: 20px;
   margin-left: 5%;
 }
@@ -735,7 +816,7 @@ nav a.heberg:hover {
 
 /*Zone filtre mobile*/
 
-h2{
+#filtres h2{
   font-size: 20px;
   margin-left: 20px;
 }
