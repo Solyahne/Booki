@@ -984,14 +984,17 @@ margin-bottom: 15px;
 
 .smallcardactivites{
   width: 340px;
+  margin-bottom: 10px;
 }
 
 .mediumcardactivites{
   width: 340px;
+  margin-bottom: 10px;
 }
 
 .bigcardactivites{
   width: 340px;
+  margin-bottom: 10px;
 }
 
 .imgactivitessmall{
@@ -1012,6 +1015,14 @@ margin-bottom: 15px;
 .activitycolumn{
 }
 
+#ilefrioul{
+  margin-top: -20px;
+  padding-bottom: 8px;
+}
+
+#parclongchamp{
+  margin-top: -20px;
+}
 
 
 }
