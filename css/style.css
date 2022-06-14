@@ -332,7 +332,6 @@ flex-wrap: wrap;
 
 .cardhebergement:hover{
 box-shadow: 0px 0px 20px 1px #C9C9C9;
-border: solid 1px #D9D9D9;
 }
 
 .imghebergements{
@@ -385,11 +384,11 @@ color: #F2F2F2;
   line-height: 1;
   background-color: white;
   margin: 3%;
+  margin-bottom: 8%;
 }
 
 .cardpopulaires:hover{
   box-shadow: 0px 0px 20px 1px #C9C9C9;
-  border: solid 1px #D9D9D9;
 }
 
 .imgpopulaires{
@@ -462,7 +461,6 @@ margin-top: 1%;
 
 .bigcardactivites:hover{
   box-shadow: 0px 5px 20px 1px #C9C9C9;
-  border: solid 1px #D9D9D9;
 }
 
 .imgactivitesbig{
@@ -485,7 +483,6 @@ margin-top: 40px;
 
 .mediumcardactivites:hover{
   box-shadow: 0px 5px 20px 1px #C9C9C9;
-  border: solid 1px #D9D9D9;
 }
 
 .imgactivitesmedium{
@@ -508,7 +505,6 @@ margin-top: 40px;
 
 .smallcardactivites:hover{
   box-shadow: 0px 5px 20px 1px #C9C9C9;
-  border: solid 1px #D9D9D9;
 }
 
 .imgactivitessmall{
@@ -525,25 +521,33 @@ footer{
   background-color: #F2F2F2;
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 footer h2{
-  margin-top: 50px;
+  margin-top: 45px;
+  font-size: 18px;
 }
 
 #mainfooter{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  width: 75%;
-  margin-left: 5%;
+  width: 70%;
+  margin-left: 4%;
+  padding-bottom: 2.5%;
 }
 
 footer ul{
     list-style: none;
+    font-weight: 500;
     padding: 0;
-    border: solid red;
+    margin: 0;
+    line-height: 1.75;
+}
+
+footer a:hover{
+  font-weight: bold;
 }
 
 .footerlinks{
@@ -715,7 +719,7 @@ button{
   display: flex;
   flex-direction: column;
   width: 45%;
-  line-height: 0.8;
+  line-height: 0.9;
 }
 
 .cardpopulaires h2{
@@ -742,7 +746,6 @@ margin-top: 10px;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
-    border: red solid;
 }
 
 #sectionactivites h1{
@@ -750,9 +753,22 @@ margin-top: 10px;
   margin-left: 5%;
 }
 
-.activitycolumn{
-width: 50%;
-border: solid red;
+.bigcardactivites{
+  margin-bottom: 15%;
+  margin-left: 5%;
+}
+
+
+
+/*Footer tablette*/
+
+#mainfooter{
+  width: 85%;
+  margin-left: 7%;
+}
+
+footer{
+  margin-top: 10px;
 }
 
 }
@@ -1044,5 +1060,17 @@ margin-bottom: 15px;
   margin-top: -20px;
 }
 
+/*Footer mobile*/
+
+#mainfooter{
+flex-direction: column;
+padding-bottom: 10%;
+}
+
+.footerlinks{
+  margin-left: 5%;
+}
+
+}
 
 }
