@@ -736,7 +736,6 @@ button{
 
 .cardpopulaires .stars{
 display: flex;
-display: column;
 margin-top: 10px;
 }
 
@@ -1069,8 +1068,6 @@ padding-bottom: 10%;
 
 .footerlinks{
   margin-left: 5%;
-}
-
 }
 
 }
