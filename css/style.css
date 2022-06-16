@@ -306,10 +306,6 @@ flex-wrap: wrap;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 6%;
-  margin-right: 6%;
-  margin-top: 2%;
-  margin-bottom: 2%;
 }
 
 #blackstar .fa-star{
@@ -688,22 +684,22 @@ button{
 #lespopulaires h1{
   position: absolute;
   margin-top: -3%;
-  margin-left: 4%;
+  margin-left: -65%;
 }
 
 #cardspopulaires{
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
+  margin-right: 2%;
   padding: 0;
-  margin-right: 3%;
 }
 
 #blackstar .fa-star{
   position: absolute;
   margin-top: -3%;
-  margin-left: 32%;
+  margin-left: 30%;
 }
 
 /*Cards Les plus populaires tablette*/
@@ -743,7 +739,7 @@ margin-top: 10px;
 
 #activites{
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
 }
 
@@ -753,10 +749,47 @@ margin-top: 10px;
 }
 
 .bigcardactivites{
+  display: flex;
+  flex-direction: column;
   margin-bottom: 15%;
   margin-left: 5%;
 }
 
+/*Cards activités grandes tablette*/
+
+.bigcardactivites{
+width: 180px;
+}
+
+.imgactivitesbig{
+  height: 300px;
+  width: 180px;
+}
+
+/*Cards activités moyennes tablette*/
+
+.mediumcardactivites{
+width: 180px;
+}
+
+.imgactivitesmedium{
+  height: 100px;
+  width: 180px;
+}
+
+/*Cards activités petites*/
+
+.smallcardactivites{
+width: 180px;
+}
+
+.imgactivitessmall{
+  object-fit: cover;
+  height: 70px;
+  width: 180px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
 
 
 /*Footer tablette*/
@@ -1045,9 +1078,6 @@ margin-bottom: 15px;
 .imgactivitesbig{
   height: 115px;
   width: 340px;
-}
-
-.activitycolumn{
 }
 
 #ilefrioul{
