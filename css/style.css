@@ -404,6 +404,7 @@ button:hover
 	line-height: 1;
 	background-color: white;
   margin: 3% 3% 8% 3%;
+  display: flex;
 }
 
 .cardpopulaires:hover
@@ -423,9 +424,7 @@ button:hover
 
 .txtpopulaires
 {
-	float: right;
-	width: 55%;
-	height: 140px;
+  margin-left: 2%;
 }
 
 .cardpopulaires h2
@@ -449,7 +448,6 @@ button:hover
 {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 7%;
 }
@@ -543,7 +541,6 @@ footer h2
 {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
 	width: 70%;
 	margin-left: 4%;
 	padding-bottom: 2.5%;
@@ -613,6 +610,12 @@ footer a:hover
     padding:0 35% 0 35%;
 	}
 
+  nav a:hover{
+    border-top: none;
+    color: #0065FC;
+    border-bottom: solid #0065FC 3px;
+  }
+
 	a.activitesnav
 	{
 		margin-left: 10px;
@@ -620,17 +623,11 @@ footer a:hover
 
 	nav a.activitesnav:hover
 	{
-		border-top: none;
-		color: #0065FC;
-		border-bottom: solid #0065FC 3px;
     padding: 0 50% 12px 35%;
 	}
 
 	nav a.heberg:hover
 	{
-		border-top: none;
-		color: #0065FC;
-		border-bottom: solid #0065FC 3px;
     padding: 0 30% 12px 35%;
 	}
 
@@ -648,14 +645,12 @@ footer a:hover
 
 	.filtres
 	{
-		display: flex;
 		flex-wrap: wrap;
 		margin-top: 40px;
 	}
 
 	.filtresliste
 	{
-		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
@@ -668,18 +663,16 @@ footer a:hover
 		margin-bottom: 5px;
 	}
 
+/*Nombre logements tablette*/
+
 	.infonombre
 	{
-		display: flex;
-		align-items: center;
 		margin-left: 5%;
 	}
 
 	/*Sections Hébergements et populaires tablette*/
 	.hebergetpop
 	{
-		margin-top: 30px;
-		display: flex;
 		flex-direction: column-reverse;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -709,9 +702,7 @@ footer a:hover
 
 	.cardspopulaires
 	{
-		display: flex;
 		flex-wrap: nowrap;
-		justify-content: space-around;
     margin: 0 2% 0 0;
 		padding: 0;
 	}
@@ -731,25 +722,11 @@ footer a:hover
 
 	.txtpopulaires
 	{
-		display: flex;
-		flex-direction: column;
-		width: 45%;
 		line-height: 0.9;
-	}
-
-	.cardpopulaires h2
-	{
-    margin: 10% 0 0 2%;
-	}
-
-	.cardpopulaires p
-	{
-		font-size: 15px;
 	}
 
 	.cardpopulaires .stars
 	{
-		display: flex;
 		margin-top: 10px;
 	}
 
@@ -771,8 +748,6 @@ footer a:hover
 	.cardactivites
 	{
     width: 180px;
-		display: flex;
-		flex-direction: column;
 		margin-bottom: 15%;
 		margin-left: 5%;
 	}
@@ -862,6 +837,12 @@ footer a:hover
     padding: 0 20% 0 20%;
 	}
 
+  nav a:hover{
+    border-top: none;
+    color: #0065FC;
+    border-bottom: solid #0065FC 3px;
+  }
+
 	a.activitesnav
 	{
 		margin-left: 10px;
@@ -869,26 +850,17 @@ footer a:hover
 
 	nav a.activitesnav:hover
 	{
-		border-top: none;
-		color: #0065FC;
-		border-bottom: solid #0065FC 3px;
     padding: 0 40% 12px 20%;
 	}
 
 	nav a.heberg:hover
 	{
-		border-top: none;
-		color: #0065FC;
-		border-bottom: solid #0065FC 3px;
     padding: 0 20% 12px 20%;
 	}
 
 	/*Zone de recherche mobile*/
 	#search
 	{
-		display: flex;
-		flex-direction: column;
-		position: relative;
 		top: 30px;
     margin: 0 6% 0 6%;
 	}
@@ -902,8 +874,6 @@ footer a:hover
 	.search_field
 	{
 		border-right: none;
-		border-top: solid #F2F2F2 1px;
-		border-bottom: solid #F2F2F2 1px;
 	}
 
 	.magnifying
@@ -941,16 +911,13 @@ footer a:hover
 
 	.filtres
 	{
-		display: flex;
 		flex-wrap: wrap;
 		margin-top: 40px;
 	}
 
 	.filtresliste
 	{
-		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
 		padding: 0px;
     margin: 0 0% 0 10%;
 	}
@@ -968,14 +935,11 @@ footer a:hover
 	button
 	{
     margin: 0 5% 15px 0;
-		display: flex;
 	}
 
 	/*Zone nombre logements mobile*/
 	.infonombre
 	{
-		display: flex;
-		align-items: center;
     margin: 0px 5% 0 5%;
 		font-size: 18px;
 	}
@@ -988,11 +952,8 @@ footer a:hover
 	/*Sections Hébergements et populaires mobile*/
 	.hebergetpop
 	{
-		margin-top: 30px;
-		display: flex;
 		flex-direction: column-reverse;
 		flex-wrap: wrap;
-		justify-content: space-between;
 	}
 
 	#lespopulaires
@@ -1032,18 +993,12 @@ footer a:hover
 	.cardpopulaires
 	{
 		width: 340px;
-		margin-left: 0px;
-		margin-right: 0px;
+    margin: 3% 0% 8% 0%;
 	}
 
 	.cardpopulaires h2
 	{
 		font-size: 17px;
-	}
-
-	.txtpopulaires
-	{
-		width: 60%;
 	}
 
 	.cardpopulaires .stars
@@ -1067,6 +1022,7 @@ footer a:hover
 		width: 100%;
 		justify-content: center;
 	}
+
 /*Général cards*/
   .cardactivites{
     width: 340px;
